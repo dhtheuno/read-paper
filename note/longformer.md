@@ -9,8 +9,10 @@ Allen Institute for AI
 
 - How do we actually deal with long sequence document? 
 - Usually BERT or other typical NLP model have a limitation on their input token length (512 or 1024)
-- we can increase the input sequence but it requires lot of computation when we calcualte self attention ($O(n^2)$) 
-- Longformer's attention mechanism is a drop-in replacement for the standard self-attetion and combines a local windowed attention with a task motivated global attention. ($O(n \times w)$)
+- we can increase the input sequence but it requires lot of computation when we calcualte self attention (<img src="https://render.githubusercontent.com/render/math?math=O(n^2)">) 
+- Longformer's attention mechanism is a drop-in replacement for the standard self-attetion and combines a local windowed attention with a task motivated global attention.
+(<img src="https://render.githubusercontent.com/render/math?math=O(n \times w)">)
+
 
 ***
 ## Introduction
@@ -42,7 +44,7 @@ Allen Institute for AI
 <img src="https://user-images.githubusercontent.com/47840814/106621291-c398f780-65b5-11eb-901e-cc2e00c65a15.png" width=600>
 
 - The transformer's computational complexity is from self-attention
-- If we have n long sequence, $O(n^2)$ time on self-attention component
+- If we have n long sequence, <img src="https://render.githubusercontent.com/render/math?math=O(n^2)"> time on self-attention component
 - Various types of attention pattern will be used to reduce the time/computational complexity on the self attention mechanism for long sequence document
 
 ### Attention Pattern
@@ -51,7 +53,7 @@ Allen Institute for AI
 - Multiple stacked layers of windowed attention will create large receptive field which top layers have 
     1. access to all input locations
     2. have the capacity to build representations that incorporate information across the entire input.
-- The computational complexity of this patter is $O(n \times w)$ if window size is w
+- The computational complexity of this patter is <img src="https://render.githubusercontent.com/render/math?math=O(n \times w)">  if window size is w
 #### Dilated Sliding Window
 - Dilation like in CNN 
 - It will help attention window to go further than the simple sliding window
