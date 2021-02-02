@@ -3,6 +3,7 @@
 - [Improving Transformer-based End-to-End Speech Recognition with Connectionist Temporal Classifciation and Language Model Integration](https://www.isca-speech.org/archive/Interspeech_2019/abstracts/1938.html)
 ## NLP
 - [Longformer: The Long-Document Transformer](https://arxiv.org/pdf/2004.05150.pdf)
+    - [note](https://github.com/dhtheuno/read-paper/blob/main/note/longformer.md)
 - [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf)
 
 ## Music
