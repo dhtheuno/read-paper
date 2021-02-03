@@ -147,6 +147,7 @@ Allen Institute for AI
 - Extended position embedding to 16k tokens and initialize the new postion embedding matrix by repeatedly copying BART's 1k postion embeddings 16 times 
 - Used arXiv summarization dataset which 90th percentile of document lengths is 14.5K tokens
 - 1024 windw sized and global attention on the first s token
+- [Example code](https://github.com/patrickvonplaten/notebooks/blob/master/Fine_tune_Longformer_Encoder_Decoder_(LED)_for_Summarization_on_pubmed.ipynb) from huggingface
 
 <img src="https://user-images.githubusercontent.com/47840814/106634555-3a88bd00-65c3-11eb-8d68-92a6654dd67a.png" height= 300, width=600>
 
